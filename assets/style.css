@@ -6,11 +6,11 @@
        background-color: rgba(0, 0, 0, 0.03);
   }
   main{
-      height: 96vh;
+      height: 98vh;
       background-color: #ffffff;
      
   }
-  .customHeader, .customFooter{
+  .customHeader{
     width: 100vw;
     height: 2vh;
     background-color: var(--unicred-collor);
