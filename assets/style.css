@@ -1,0 +1,31 @@
+:root {
+    --unicred-collor: rgb(167, 148, 80);
+  }
+
+  body{
+       background-color: rgba(0, 0, 0, 0.03);
+  }
+  main{
+      height: 96vh;
+      background-color: #ffffff;
+     
+  }
+  .customHeader, .customFooter{
+    width: 100vw;
+    height: 2vh;
+    background-color: var(--unicred-collor);
+  }
+ .form-control{
+     border-radius: 1rem;
+ }
+ ::placeholder { 
+    opacity: 0.5 !important;
+  }
+  #inputFullName, #inputEmail {
+      text-align:left;
+  }
+  input{
+     text-align: center;
+  }
+
+ 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Teste-BPM-Office/assets/style.css">
+    <title>Teste BPM Office</title>
+</head>
+
+<body>
+    <header class="customHeader">
+
+    </header>
+    <main class="container ">
+        <h2>Formulário</h2>
+        <form id="form">
+            <div class="form-row  ">
+                <div class="form-group col-md-6 offset-md-2 ">
+                    <label for="inputFullName">Nome Completo</label>
+                    <input type="text" class="form-control" id="inputFullName" placeholder="Nome Completo">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputBirthDate">Data de Nascimento</label>
+                    <input type="datetime" id="inputBirthDate" class="form-control" placeholder="dd/mm/aaaa"
+                        onkeypress="$(this).mask('00/00/0000')">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4 offset-md-2">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="exemplo@email.com">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputCpf">CPF</label>
+                    <input type="text" id="inputCpf" class="form-control" placeholder="000.000.000-00" minlength="14"
+                        maxlength="14" onkeypress="$(this).mask('000.000.000-00');">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputCellPhone">Celular</label>
+                    <input type="text" id="inputCellPhone" class="form-control" placeholder="(00)0000-0000"
+                        onkeypress="$(this).mask('(00) 0000-00009')">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label for="inputPostCode">Cep</label>
+                    <input type="text" id="inputPostCode" class="form-control" placeholder="00.000-000"
+                        onkeypress="$(this).mask('00.000-000')">
+                </div>
+
+
+            </div>
+            <div class="form-row">
+                <button type="submit" class="btn btn-success">Entrar</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="customFooter">
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
