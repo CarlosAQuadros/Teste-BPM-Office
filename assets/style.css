@@ -1,19 +1,21 @@
 :root {
-    --unicred-collor: rgb(167, 148, 80);
+    --unicred-gold-collor: rgb(167, 148, 80);
   }
 
-  body{
-       background-color: rgba(0, 0, 0, 0.03);
+  body{ 
+    
+    background-color: #ffffff;
+      
   }
   main{
       height: 98vh;
-      background-color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.03);
      
   }
   .customHeader{
     width: 100vw;
     height: 2vh;
-    background-color: var(--unicred-collor);
+    background-color: var(--unicred-gold-collor);
   }
  .form-control{
      border-radius: 1rem;
@@ -27,5 +29,8 @@
   input{
      text-align: center;
   }
-
+#IdkZipCode{
+  
+  font-size: 0.8em!important;
+}
  

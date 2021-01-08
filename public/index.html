@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 
     </header>
     <main class="container ">
-        <h2>Formulário</h2>
+        <h1 class="text-center p-4 ">Formulário</h1>
         <form id="form">
             <div class="form-row  ">
                 <div class="form-group col-md-6 offset-md-2 ">
@@ -47,13 +47,15 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-md-2 offset-md-2 ">
-                    <label for="inputPostCode">Cep</label>
-                    <input type="text" id="inputPostCode" class="form-control" placeholder="00.000-000"
-                        onkeypress="$(this).mask('00.000-000')" required>
+                    <label for="inputPostCode">Cep <a id="IdkZipCode"
+                            href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm" target="_Blank">Nao
+                            sei meu cep!</a></label>
+                    <input type="text" id="inputPostCode" class="form-control " placeholder="00.000-000"
+                        onkeypress="$(this).mask('00000-000')" required>
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="inputLogradouro">Logradouro</label>
-                    <input type="text" id="inputLogradouro" class="form-control" placeholder="Exemplo" required>
+                    <label for="input_logradouro">Logradouro</label>
+                    <input type="text" id="input_logradouro" class="form-control" placeholder="Exemplo" required>
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputHomeNumber">Numero</label>
@@ -61,21 +63,21 @@
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputComplement">Complemento</label>
-                    <input type="text" id="inputComplement" class="form-control" placeholder="exemplo" required>
+                    <input type="text" id="inputComplement" class="form-control" placeholder="exemplo" >
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-2 offset-md-2">
-                    <label for="inputComplement">Bairro</label>
-                    <input type="text" id="inputComplement" class="form-control" placeholder="exemplo" required>
+                    <label for="input_bairro">Bairro</label>
+                    <input type="text" id="input_bairro" class="form-control" placeholder="exemplo" required>
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="inputComplement">Cidade</label>
-                    <input type="text" id="inputComplement" class="form-control" placeholder="exemplo" required>
+                    <label for="input_cidade">Cidade</label>
+                    <input type="text" id="input_cidade" class="form-control" placeholder="exemplo" required>
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="inputComplement">Estado</label>
-                    <input type="text" id="inputComplement" class="form-control" placeholder="exemplo" required>
+                    <label for="input_estado">Estado</label>
+                    <input type="text" id="input_estado" class="form-control" placeholder="exemplo" required>
                 </div>
             </div>
             <div class="form-row">
@@ -84,7 +86,7 @@
                     <textarea class="form-control" id="textArea" rows="3"></textarea>
                     <button type="submit" class="btn btn-success mt-2 ">Entrar</button>
                 </div>
-           
+
             </div>
 
         </form>
