@@ -10,105 +10,113 @@
     <title>Teste BPM Office</title>
 </head>
 
-<body class="color-change-2x">
-    
-    <main class="container  ">
+<body class="">
+    <div class="row justify-content-center">
         <div class="">
-            
-        <h1 class="text-center p-4 ">Formulário</h1>
-        <form class="" id="form">
-            <div class="form-row  ">
-                <div class="form-group col-md-6 offset-md-2 ">
-                    <label for="inputFullName">Nome Completo</label>
-                    <input type="text" class="form-control" id="inputFullName" placeholder="Nome Completo" required>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputBirthDate">Data de Nascimento</label>
-                    <input type="date" id="inputBirthDate" class="form-control" placeholder="dd/mm/aaaa"
-                        min="1901-01-01" max="2015-01-01" required
-                        onkeypress="$('#date').mask('99/99/9999',{placeholder:'dd/mm/yyyy'});">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4 offset-md-2">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="exemplo@email.com" required>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputCpf">CPF</label>
-                    <input type="text" id="inputCpf" class="form-control" placeholder="000.000.000-00" minlength="14"
-                        maxlength="14" onkeypress="$(this).mask('000.000.000-00');" required>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputCellPhone">Celular</label>
-                    <input type="text" id="inputCellPhone" class="form-control" placeholder="(00)0000-0000"
-                        onkeypress="$(this).mask('(00) 0000-00009')" required>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-2 offset-md-2 ">
-                    <label for="inputPostCode">Cep <a id="IdkZipCode"
-                            href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm" target="_Blank"
-                            tabindex="-1">Nao
-                            sei meu cep!</a></label>
-                    <input type="text" id="inputPostCode" class="form-control " placeholder="00.000-000"
-                        onkeypress="$(this).mask('00000-000')" required>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="input_logradouro">Logradouro</label>
-                    <input type="text" id="input_logradouro" class="form-control" placeholder="Exemplo" required>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputHomeNumber">Numero</label>
-                    <input type="text" id="inputHomeNumber" class="form-control" placeholder="000" required>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputComplement">Complemento</label>
-                    <input type="text" id="inputComplement" class="form-control" placeholder="exemplo">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-2 offset-md-2">
-                    <label for="input_bairro">Bairro</label>
-                    <input type="text" id="input_bairro" class="form-control" placeholder="exemplo" required>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="input_cidade">Cidade</label>
-                    <input type="text" id="input_cidade" class="form-control" placeholder="exemplo" required>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="input_estado">Estado</label>
-                    <input type="text" id="input_estado" class="form-control" placeholder="exemplo" required>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-8 offset-md-2">
-                    <label for="textArea">Example textarea</label>
-                    <textarea class="form-control" id="textArea" rows="3"></textarea>
-                    <button type="submit" class="btn btn-success mt-2 ">Entrar</button>
-                </div>
+            <main class=" col cardStyle">
+                <h1 class="  text-center">Formulário</h1>
+                <form class="" id="form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6 offset-md-1">
+                            <label for="inputFullName">Nome Completo</label>
+                            <input name="Nome" type="text" class="form-control" id="inputFullName"
+                                placeholder="Nome Completo" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputBirthDate">Data de Nascimento</label>
+                            <input name="Data de nascimento" type="date" id="inputBirthDate" class="form-control"
+                                placeholder="dd/mm/aaaa" min="1901-01-01" max="2015-01-01" required
+                                onkeypress="$('#date').mask('99/99/9999',{placeholder:'dd/mm/yyyy'});">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4 offset-md-1">
+                            <label for="inputEmail">Email</label>
+                            <input name="Email" type="email" id="inputEmail" class="form-control"
+                                placeholder="exemplo@email.com" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputCpf">CPF</label>
+                            <input name="Cpf" type="text" id="inputCpf" class="form-control"
+                                placeholder="000.000.000-00" minlength="14" maxlength="14"
+                                onkeypress="$(this).mask('000.000.000-00');" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputCellPhone">Celular</label>
+                            <input name="Celular" type="text" id="inputCellPhone" class="form-control"
+                                placeholder="(00)0000-0000" onkeypress="$(this).mask('(00) 0000-00009')" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4 offset-md-1">
+                            <label for="inputPostCode">Cep <a id="IdkZipCode"
+                                    href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm"
+                                    target="_Blank" tabindex="-1">Nao
+                                    sei meu cep!</a></label>
+                            <input name="Cep" type="text" id="inputPostCode" class="form-control "
+                                placeholder="00.000-000" onkeypress="$(this).mask('00000-000')" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="input_logradouro">Logradouro</label>
+                            <input name="Logradouro" type="text" id="input_logradouro" class="form-control"
+                                placeholder="Exemplo" required>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputHomeNumber">Numero</label>
+                            <input name="Número" type="text" id="inputHomeNumber" class="form-control" placeholder="000"
+                                required>
+                        </div>
 
-            </div>
-
-        </form>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4 offset-md-1">
+                            <label for="inputComplement">Complemento</label>
+                            <input name="Complemento" type="text" id="inputComplement" class="form-control"
+                                placeholder="exemplo">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="input_estado">Estado</label>
+                            <input name="Estado" type="text" id="input_estado" class="form-control"
+                                placeholder="exemplo" required>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="input_cidade">Cidade</label>
+                            <input name="Cidade" type="text" id="input_cidade" class="form-control"
+                                placeholder="exemplo" required>
+                        </div>
+                        <div class="form-group col-md-2 ">
+                            <label for="input_bairro">Bairro</label>
+                            <input name="Bairro" type="text" id="input_bairro" class="form-control"
+                                placeholder="exemplo" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-10 offset-md-1">
+                            <label for="textArea">Example textarea</label>
+                            <textarea name="Bio" class="form-control" id="textArea" rows="3"></textarea>
+                            <button type="submit" class="btn btn-success mt-2 ">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div>
     </div>
-    </main>
+</body>
+<footer class="customFooter">
 
-    <footer class="customFooter">
+</footer>
 
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="/assets/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="/assets/index.js"></script>
 </body>
 
 </html>

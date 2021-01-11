@@ -1,22 +1,15 @@
 :root {
     --unicred-gold-collor: rgb(167, 148, 80);
   }
-  
 
   body{ 
-    height: 100vh;
-    
-    background-color: #ffffff;
-      
-  }
-  main{
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.03);
-     
-  }
+    background: rgb(167,148,80);
+    background: linear-gradient(90deg, rgba(167,148,80,1) 21%, rgba(35,170,37,1) 78%);
 
+  }
+ 
  .form-control{
-     border-radius: 1rem;
+     border-radius: 0.8rem;
  }
  ::placeholder { 
     opacity: 0.5 !important;
@@ -31,4 +24,24 @@
 
   font-size: 0.8em!important;
 }
- /*================*/
+.cardStyle{
+ 
+  background-color: #ffffffe0;
+  margin: 0 auto;
+  margin-top: 20%;
+  border-radius: 25px;
+  box-shadow:  19px 19px 30px #646464,
+             -19px -19px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+ @media  (max-width: 768px) {
+  .cardStyle {
+    margin-top: unset;
+  }
+}
+
+
+
+ /*================*/ /*================*/ /*================*/ /*================*/
+ 
